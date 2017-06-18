@@ -12,9 +12,10 @@ class Solution(object):
 #ord convert char to int, chr convert int to char
 class Solution2(object):
     def findTheDifference(self, s, t):
-        str = s + t
         ans = 0
-        for item in str:
+        for item in s:
+            ans ^= ord(item)
+        for item in t:
             ans ^= ord(item)
         return chr(ans)
 
