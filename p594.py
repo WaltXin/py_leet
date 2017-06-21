@@ -11,6 +11,8 @@ class Solution(object):
                 result = max(result,count[x] + count[x + 1])
         return result
 
+
+
 class Test(unittest.TestCase):
     def test(self):
         self._test([1,1,1,2,3], 4)
